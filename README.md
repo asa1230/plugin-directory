@@ -3,64 +3,9 @@
  */
 
 
-// (操作选项)
-
-(function(){
-    'use strict'
-
-    if(selection.count() > 0) {
-        // 清除选择图层名称
-        for(var i = 0; i < selection.count(); i ++) {
-            cleanLayerName(selection[i]);
-        }  
-    } else {
-        // 清除所有图层名称
-        var allLayers = doc.currentPage().children();
-        for(var i = 0; i < allLayers.count(); i++) {      
-            cleanLayerName(allLayers[i]);
-        }
-    }
-
-    function cleanLayerName(arg_layer) {
-        if(/copy( \d+)?$/gi.test(arg_layer.name())) {
-            var newLayerName = arg_layer.name().replace(/ copy( \d+)?/gi, '');
-            arg_layer.setName(newLayerName);
-        }
-        
-        if(/^(Rectangle|Oval|Star|Polygon|Triangle)( \d+)/i.test(arg_layer.name())) {
-            var newLayerName = arg_layer.name().replace(/( \d+)$/i, '');
-            arg_layer.setName(newLayerName);
-        }
-    }
-
-})();
-
-
-
-
-
-/*
- * Copyright (c) 2015 Ashung Hung
- * 
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- *    http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
-
-
- 
-
 # Sketch 中文汉化插件聚合
 
-托管在GIThub上面的不错的sketch插件集合  优狐做了一定的汉化和改良.
+托管在GIThub上面的不错的sketch插件集合  “优狐” 做了一定的汉化和改良.
 
 **提示:** 如果您有更好的建议和插件推荐, 仅仅只用写一个问题或建议到这个链接, 你或者也可以发送一个合并请求给我.
 
@@ -76,11 +21,11 @@
 - [AntonStrand/dynamic-reposition](https://github.com/antonstrand/dynamic-reposition) Make it easy to resize an object without having to manually move all the content to keep the margins.
 - [AntonStrand/Sketch-Resize](https://github.com/antonstrand/sketch-resize) Use one layer or the artboard as a template to resize other layers.
 - [Arkkimaagi/ArtboardZoom](https://github.com/arkkimaagi/artboardzoom) 放大选中的画布到当前窗口.
-- [automat/sketch-plugin-typographic-scale](https://github.com/automat/sketch-plugin-typographic-scale) Generates a typographic scale from selected text layers.
+- [automat/sketch-plugin-typographic-scale](https://github.com/automat/sketch-plugin-typographic-scale) 生成一个可以自动适应的表单
 - [bitinn/sketch-text-align](https://github.com/bitinn/sketch-text-align) Properly align text layers regardless of their rectangle box in Sketch.
 - [bomberstudios/sketch-commands](https://github.com/bomberstudios/sketch-commands) A collection of script commands for Bohemian Coding's Sketch.app
-- [bomberstudios/sketch-duplicate-and-nudge](https://github.com/bomberstudios/sketch-duplicate-and-nudge) A port to Sketch.app of Photoshop's Duplicate and Nudge feature.
-- [bomberstudios/sketch-framer](https://github.com/bomberstudios/sketch-framer) A plugin to export Sketch.app documents into FramerJS to make interactive prototypes.
+- [bomberstudios/sketch-duplicate-and-nudge](https://github.com/bomberstudios/sketch-duplicate-and-nudge) 一个接口：实现sketch与pHOTOSHOP 粘贴和复制功能
+- [bomberstudios/sketch-framer](https://github.com/bomberstudios/sketch-framer)导出sketch 文档到 FramerJS to make interactive prototypes.
 - [bomberstudios/sketch-generator](https://github.com/bomberstudios/sketch-generator) This command is a recreation for Sketch of the Photoshop Generator functionality introduced by Adobe on Photoshop CC.
 - [brandonbeecroft/Lorem-Ipsum-Plugin-for-Sketch](https://github.com/brandonbeecroft/lorem-ipsum-plugin-for-sketch) This is a plugin for quickly creating Lorem Ipsum text in Sketch.
 - [BriteSnow/sketch-storyboard](https://github.com/britesnow/sketch-storyboard) Turn your artboards into storyboards.
