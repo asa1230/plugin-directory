@@ -1,10 +1,10 @@
-# Contributing
+# 加入我们
 
-To add a new plugin to the directory:
+如何增加新的插件到聚合库:
 
 1. Fork the repo (create a new branch as well if you want)
-2. Modify `plugins.json` by adding your plugin
-3. Run `rake` to update the `README.md` file
-4. Push your changes to your fork and [submit a pull request](https://github.com/sketchplugins/plugin-directory/compare/)
+2. 修改 `plugins.json` by adding your plugin
+3. 运行 `rake` to update the `README.md` file
+4. 提交修改到你的fork 并 [发送申请](https://github.com/sketchplugins/plugin-directory/compare/)
 
-Thanks in advance!
+你不是一个人在汉化，一起把！
